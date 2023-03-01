@@ -5,6 +5,11 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 require('dotenv').config({ path: '.env' })
 
 module.exports = (env, argv) => ({
+    devServer: {
+        disableHostCheck: true,
+        host: "0.0.0.0",
+        port: 3000,
+    },
     mode: 'development',
     entry: './src/index.js',
     output: {
