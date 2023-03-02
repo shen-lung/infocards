@@ -74,7 +74,7 @@ const Card = ({item}) => {
 
     return (
         <div key={item.userId} className='card'>
-            <div onClick={handleEdit}>
+            <div className='editButton' onClick={handleEdit}>
                 <img className={isEdit ? 'userEditDesactivate' : 'userEdit'} src={mainIcons.iconEditUser} alt='Edit user' />
             </div>
             <div className='cardHeader'></div>
